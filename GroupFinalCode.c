@@ -85,7 +85,9 @@ typedef struct airports
 
 
 
-
+int LoginNum;
+int MgmtAct;
+int CustAct;
 
 int main()
 {
@@ -97,7 +99,7 @@ int main()
         printf("\n (1)Invetory/location \n(2) Net Value \n(3)Profit/Losses");
         scanf("%d", MgmtAct);
         do {
-            switch (Mgmt Act) {
+            switch (MgmtAct) {
             case 1:
                 printf("Would you like to look at our inventory and the location of our planes?");
                 printf("\n (1)Inventory/location \n(2)Exit to actions");
@@ -108,15 +110,37 @@ int main()
                 break;
             case 2:
                 printf("User would like to see Net value of flights");
+                    //Pull variable from booking function regarding cost per trip to calculate cost of jet fuel
                 break;
             case 3:
                 printf("User would like to see profit and losses");
+                    //function(totalprofit)
                 break;
             default:
             }
             while (MgmtAct > 0 && Mgmt < 5);
         }
-    else(LoginNum = 2) {
+    else if(LoginNum = 2) {
+        printf("Welcome customer! What would you like to do today?");
+        printf(\n (4)Booking \n(5)Cancel \n(6)Change);
+        scanf("%d", CustAct);
+      do{
+          switch (CustAct) {
+              case 4:
+                  printf("\nUser would like to book.");
+                  //function(booking)
+               break;
+              case 5:
+                  printf("\nUser would like to cancel.");
+                  //function(cancel)
+                  break;
+              case 6:
+                  printf("\nUser would like to change.");
+                  //function(change)
+                  break;
+              default:
+      }
+          while (CustAct > 3 && CustAct < 7);
     }
 
 
