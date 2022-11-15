@@ -7,59 +7,59 @@
 //defining structure to host inside array 
 typedef struct planestatsinfo
 {
-    int crew;
-    int pilot;
-    int passangers;
-    int costperhour;
-    int maxrange;
-    int totalcost;
-}   STATS;
+    int p787;
+    int p777;
+    int p747;
+    int p737;
+}   P_Types;
 
 //defining function to house and grab relevant planestats
 int planestatsgrab()
 {
     //array for housing plane statistics by model
 
-    STATS* planestats_ptr;
-    STATS planestats[4];
+    P_type* planestats_ptr;
+    P_type planestats[6];
 
     //shows corresponding position of array by planetype
-    int p787 = 0;
-    int p777 = 1;
-    int p747 = 2;
-    int p737 = 3;
-
+    int crew = 0;
+    int pilot = 1;
+    int passangers = 2;
+    int costperhour = 3;
+    int maxrange = 4;
+    int totalcost = 5;
+    
     //defining values for 787
-    planestats[p787].crew = 7;
-    planestats[p787].pilot = 2;
-    planestats[p787].passangers = 340;
-    planestats[p787].costperhour = 15000;
-    planestats[p787].maxrange = 7300;
-    planestats[p787].totalcost = 250000000;
+    planestats[crew].p787 = 7;
+    planestats[pilot].p787 = 2;
+    planestats[passangers].p787 = 340;
+    planestats[costperhour].p787 = 15000;
+    planestats[maxrange].p787 = 7300;
+    planestats[totalcost].p787 = 250000000;
 
     //defining values for 777
-    planestats[p777].crew = 9;
-    planestats[p777].pilot = 2;
-    planestats[p777].passangers = 430;
-    planestats[p777].costperhour = 30000;
-    planestats[p777].maxrange = 7300;
-    planestats[p777].totalcost = 400000000;
+    planestats[crew].p777 = 9;
+    planestats[pilot].p777 = 2;
+    planestats[passangers].p777 = 430;
+    planestats[costperhour].p777 = 30000;
+    planestats[maxrange].p777 = 7300;
+    planestats[totalcost].p777 = 400000000;
 
     //defining values for 747
-    planestats[p747].crew = 11;
-    planestats[p747].pilot = 3;
-    planestats[p747].passangers = 520;
-    planestats[p747].costperhour = 25000;
-    planestats[p747].maxrange = 7800;
-    planestats[p747].totalcost = 420000000;
+    planestats[crew].p747 = 11;
+    planestats[pilot].p747 = 3;
+    planestats[passangers].p747 = 520;
+    planestats[costperhour].p747 = 25000;
+    planestats[maxrange].p747 = 7800;
+    planestats[totalcost].p747 = 420000000;
 
     //defining values for 737
-    planestats[p737].crew = 4;
-    planestats[p737].pilot = 2;
-    planestats[p737].passangers = 200;
-    planestats[p737].costperhour = 10000;
-    planestats[p737].maxrange = 3500;
-    planestats[p737].totalcost = 120000000;
+    planestats[crew].p737 = 4;
+    planestats[pilot].p737 = 2;
+    planestats[passangers].p737 = 200;
+    planestats[costperhour].p737 = 10000;
+    planestats[maxrange].p737 = 3500;
+    planestats[totalcost].p737 = 120000000;
 }
 
 //struct to house inventory by type 
@@ -130,6 +130,16 @@ int main()
               case 4:
                   printf("\nUser would like to book.");
                   //function(booking)
+                  //print(what is your age?
+                  //scan(enter)
+                  //print(what type of ticket would you like to purchase?
+                  //scan(enter)
+                  //
+                  //print(Where are you flying out of?
+                  //scan(enter)
+                  //print(where are you flying to?
+                  //scan(enter
+                  //print
                break;
               case 5:
                   printf("\nUser would like to cancel.");
