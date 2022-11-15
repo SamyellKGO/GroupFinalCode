@@ -2,7 +2,7 @@
 //
 #include <stdio.h>
 #include <stdlib.h>
-this is a change
+
 
 //defining structure to host inside array 
 typedef struct planestatsinfo
