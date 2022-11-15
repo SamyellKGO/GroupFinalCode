@@ -11,7 +11,7 @@ typedef struct planestatsinfo
     int p777;
     int p747;
     int p737;
-}   P_Types;
+}   P_Type;
 
 //defining function to house and grab relevant planestats
 int planestatsgrab()
