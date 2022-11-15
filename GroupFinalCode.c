@@ -89,6 +89,12 @@ typedef struct airports
 int LoginNum;
 int MgmtAct;
 int CustAct;
+int age;
+int ticket;
+int start;
+int end;
+int bags;
+int snacks;
 
 int main()
 {
