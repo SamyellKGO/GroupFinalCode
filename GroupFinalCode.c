@@ -129,17 +129,7 @@ int main()
           switch (CustAct) {
               case 4:
                   printf("\nUser would like to book.");
-                  //function(booking)
-                  //print(what is your age?
-                  //scan(enter)
-                  //print(what type of ticket would you like to purchase?
-                  //scan(enter)
-                  //
-                  //print(Where are you flying out of?
-                  //scan(enter)
-                  //print(where are you flying to?
-                  //scan(enter
-                  //print
+                  scanf(%
                break;
               case 5:
                   printf("\nUser would like to cancel.");
