@@ -85,7 +85,10 @@ typedef struct airports
 
 
 
-// main variables
+
+
+int main()
+{
 int LoginNum;
 int MgmtAct;
 int CustAct;
@@ -95,9 +98,7 @@ int start;
 int end;
 int bags;
 int snacks;
-
-int main()
-{
+    
     printf("Hello user! Which option would you like to choose?\n (1)Management \n (2)Customer \n (0)Log out");
     scanf("%d", &LoginNum);
     printf("\nUser chose option %d.", LoginNum);
