@@ -8,6 +8,7 @@
 typedef struct planestatsinfo
 {
     
+    int p787;
     int p777;
     int p747;
     int p737;
