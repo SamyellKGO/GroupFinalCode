@@ -7,7 +7,7 @@
 //defining structure to host inside array 
 typedef struct planestatsinfo
 {
-    int p787;
+    
     int p777;
     int p747;
     int p737;
