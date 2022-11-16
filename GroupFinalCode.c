@@ -99,6 +99,8 @@ int start;
 int end;
 int bags;
 int snacks;
+int total cost;
+int booknum;
     
     printf("Hello user! Which option would you like to choose?\n (1)Management \n (2)Customer \n (0)Log out");
     scanf("%d", &LoginNum);
@@ -127,15 +129,15 @@ int snacks;
                 break;
             default:
             }
-            while (MgmtAct > 0 && Mgmt < 5);
+            while (MgmtAct > 3 && Mgmt < 1);
         }
     else if(LoginNum = 2) {
         printf("Welcome customer! What would you like to do today?");
-        printf(\n (4)Booking \n(5)Cancel \n(6)Change);
+        printf(\n (1)Booking \n(2)Cancel \n(3)Change);
         scanf("%d", CustAct);
       do{
           switch (CustAct) {
-              case 4:
+              case 1:
                   printf("\nUser would like to book.");
                   printf("\nWhat is your age?");
                   scanf("%d",age);
@@ -149,18 +151,22 @@ int snacks;
                   scanf("%d",bags);
                   printf("\nHow many snacks would you like to purchase?");
                   scanf("%d",snacks);
+                  total cost =(//costhr/60)*(ticket)+(bags*50)+(snacks*3);
+                  printf("\nYour total cost is $%d.", total cost);
                break;
-              case 5:
+              case 2:
                   printf("\nUser would like to cancel.");
-                  //function(cancel)
+                  printf("\nPlease enter booking number.");
+                  scanf("%d", booknum);
                   break;
-              case 6:
+              case 3:
                   printf("\nUser would like to change.");
-                  //function(change)
+                  printf("\nPlease enter booking number.");
+                  scanf("%d", booknum);
                   break;
               default:
     }
-        while (CustAct > 3 && CustAct < 7);
+        while (CustAct > 3 && CustAct < 1);
 
     return 0;
     }
