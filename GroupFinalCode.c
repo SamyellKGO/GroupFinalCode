@@ -135,7 +135,18 @@ int main()
           switch (CustAct) {
               case 4:
                   printf("\nUser would like to book.");
-                  scanf(%
+                  printf("\nWhat is your age?");
+                  scanf("%d",age);
+                  printf("\nWhich type of ticket would you like to purchase?\n(0)First Class (1)Economy");
+                  scanf("%d",ticket);
+                  printf("\nWhere are you flying from?\n(0)San Antonio (1)New York (2)London (3)Los Angeles (4)Madrid");
+                  scanf("%d",start);
+                  printf("\nWhere are you flying to?\n(0)San Antonio (1)New York (2)London (3)Los Angeles (4)Madrid");
+                  scanf("%d",end);
+                  printf("\nHow many extra bags will be taken on the plane?");
+                  scanf("%d",bags);
+                  printf("\nHow many snacks would you like to purchase?");
+                  scanf("%d",snacks);
                break;
               case 5:
                   printf("\nUser would like to cancel.");
